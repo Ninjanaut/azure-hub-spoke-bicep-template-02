@@ -1,0 +1,218 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="0ds7hLMwMAAL0pF1Mt4P">
+    <mxGraphModel dx="3412" dy="1001" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="Subscription - app2-dev (&lt;b&gt;spoke&lt;/b&gt;)" vertex="1">
+          <mxGeometry height="270" width="260" x="-350" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;" value="RG" vertex="1">
+          <mxGeometry height="210" width="222" x="-332" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="Subscription - Connectivity (&lt;b&gt;hub&lt;/b&gt;)" vertex="1">
+          <mxGeometry height="450" width="430" x="-860" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;" value="RG" vertex="1">
+          <mxGeometry height="210" width="380" x="-830" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="VNet&amp;nbsp;10.0.8.0/22" vertex="1">
+          <mxGeometry height="170" width="180" x="-310" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="Subnet&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;10.0.8.0/24 + NSG&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="-290" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;" value="VM&lt;div&gt;10.0.8.4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="-260" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-47" edge="1" parent="1" source="2jV1Fko8A6Mi409qoMQ7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="2jV1Fko8A6Mi409qoMQ7-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-48" connectable="0" parent="2jV1Fko8A6Mi409qoMQ7-47" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Virtual&lt;br&gt;network&lt;br&gt;peering" vertex="1">
+          <mxGeometry relative="1" x="-0.0667" y="-1" as="geometry">
+            <mxPoint x="1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="VNet 10.0.0.0/22&amp;nbsp;" vertex="1">
+          <mxGeometry height="170" width="340" x="-810" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="Subnet&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;10.0.0.0/24 + NSG&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="-629" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-101" edge="1" parent="1" source="D6FtMXpiIkigNPtJOXcS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="2jV1Fko8A6Mi409qoMQ7-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-105" connectable="0" parent="D6FtMXpiIkigNPtJOXcS-101" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Link" vertex="1">
+          <mxGeometry relative="1" x="0.253" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;" value="VM-Router&lt;div&gt;10.0.0.4&lt;/div&gt;&lt;div&gt;Forwarding=1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="-604" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="AzureBastionSubnet&amp;nbsp;&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;10.0.1.0/26 + NSG&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="-790" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;" value="Azure&lt;br&gt;Bastion + &lt;br&gt;Public IP" vertex="1">
+          <mxGeometry height="60" width="90" x="-765" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;" value="&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;RG&lt;/span&gt;" vertex="1">
+          <mxGeometry height="110" width="160" x="-720" y="533" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-100" edge="1" parent="1" source="D6FtMXpiIkigNPtJOXcS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="2jV1Fko8A6Mi409qoMQ7-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-103" connectable="0" parent="D6FtMXpiIkigNPtJOXcS-100" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Link" vertex="1">
+          <mxGeometry relative="1" x="0.1608" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;" value="Private DNS Zones" vertex="1">
+          <mxGeometry height="60" width="90" x="-685" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="Subscription - app1-dev (&lt;b&gt;spoke&lt;/b&gt;)" vertex="1">
+          <mxGeometry height="270" width="260" x="-1210" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;verticalAlign=top;" value="RG" vertex="1">
+          <mxGeometry height="210" width="222" x="-1192" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="VNet&amp;nbsp;10.0.4.0/22" vertex="1">
+          <mxGeometry height="170" width="180" x="-1170" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="Subnet&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;10.0.4.0/24 + NSG&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="140" x="-1150" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;" value="VM&lt;div&gt;10.0.4.4&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="-1120" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-49" edge="1" parent="1" source="2jV1Fko8A6Mi409qoMQ7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="D6FtMXpiIkigNPtJOXcS-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2jV1Fko8A6Mi409qoMQ7-50" connectable="0" parent="2jV1Fko8A6Mi409qoMQ7-49" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Virtual &lt;br&gt;network &lt;br&gt;peering" vertex="1">
+          <mxGeometry relative="1" x="0.6055" y="-1" as="geometry">
+            <mxPoint x="44" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-106" edge="1" parent="1" source="D6FtMXpiIkigNPtJOXcS-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D6FtMXpiIkigNPtJOXcS-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-107" connectable="0" parent="D6FtMXpiIkigNPtJOXcS-106" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Assigned to &lt;br&gt;Entra ID &lt;br&gt;groups" vertex="1">
+          <mxGeometry relative="1" x="-0.0707" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-20" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Bastion User" vertex="1">
+          <mxGeometry height="60" width="30" x="-1172" y="752" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-48" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#eeeeee;strokeColor=#36393d;" value=" RBAC assignments for Bastion User (VM Administrator) " vertex="1">
+          <mxGeometry height="243" width="684" x="-994" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-49" parent="D6FtMXpiIkigNPtJOXcS-48" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="43" width="684" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-50" parent="D6FtMXpiIkigNPtJOXcS-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#666666;overflow=hidden;fillColor=#f5f5f5;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontColor=#333333;" value="Entra ID Security Group&lt;br&gt;(custom)" vertex="1">
+          <mxGeometry height="43" width="228" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-51" parent="D6FtMXpiIkigNPtJOXcS-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#666666;overflow=hidden;fillColor=#f5f5f5;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontColor=#333333;" value="Azure Role&lt;br&gt;(built-in)" vertex="1">
+          <mxGeometry height="43" width="228" x="228" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-52" parent="D6FtMXpiIkigNPtJOXcS-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#666666;overflow=hidden;fillColor=#f5f5f5;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontColor=#333333;" value="Resource" vertex="1">
+          <mxGeometry height="43" width="228" x="456" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-55" parent="D6FtMXpiIkigNPtJOXcS-48" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="42" width="684" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-56" parent="D6FtMXpiIkigNPtJOXcS-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="sg-app1-dev-vm-admin-login&lt;br&gt;(optional)" vertex="1">
+          <mxGeometry height="42" width="228" as="geometry">
+            <mxRectangle height="42" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-57" parent="D6FtMXpiIkigNPtJOXcS-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Virtual Machine Administrator Login + Reader" vertex="1">
+          <mxGeometry height="42" width="228" x="228" as="geometry">
+            <mxRectangle height="42" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-58" parent="D6FtMXpiIkigNPtJOXcS-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="rg-spoke-app1-dev &lt;br&gt;(resource group)" vertex="1">
+          <mxGeometry height="42" width="228" x="456" as="geometry">
+            <mxRectangle height="42" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-61" parent="D6FtMXpiIkigNPtJOXcS-48" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="43" width="684" y="115" as="geometry" />
+        </mxCell>
+        <UserObject label="sg-app2-dev-vm-admin-login&lt;br&gt;(optional)" id="D6FtMXpiIkigNPtJOXcS-62">
+          <mxCell parent="D6FtMXpiIkigNPtJOXcS-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+            <mxGeometry height="43" width="228" as="geometry">
+              <mxRectangle height="43" width="228" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-63" parent="D6FtMXpiIkigNPtJOXcS-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Virtual Machine Administrator Login + Reader" vertex="1">
+          <mxGeometry height="43" width="228" x="228" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-64" parent="D6FtMXpiIkigNPtJOXcS-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="rg-spoke-app2-dev&lt;br&gt;(resource group)" vertex="1">
+          <mxGeometry height="43" width="228" x="456" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-96" parent="D6FtMXpiIkigNPtJOXcS-48" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="43" width="684" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-97" parent="D6FtMXpiIkigNPtJOXcS-96" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="sg-hub-shared-vm-admin-login&lt;br&gt;(optional)" vertex="1">
+          <mxGeometry height="43" width="228" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-98" parent="D6FtMXpiIkigNPtJOXcS-96" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Virtual Machine Administrator Login + Reader" vertex="1">
+          <mxGeometry height="43" width="228" x="228" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-99" parent="D6FtMXpiIkigNPtJOXcS-96" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="rg-hub-shared&lt;br&gt;(resource group)" vertex="1">
+          <mxGeometry height="43" width="228" x="456" as="geometry">
+            <mxRectangle height="43" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-67" parent="D6FtMXpiIkigNPtJOXcS-48" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="42" width="684" y="201" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-68" parent="D6FtMXpiIkigNPtJOXcS-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="sg-hub-shared-bastion-users&lt;br&gt;(mandatory)" vertex="1">
+          <mxGeometry height="42" width="228" as="geometry">
+            <mxRectangle height="42" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Reader" id="D6FtMXpiIkigNPtJOXcS-69">
+          <mxCell parent="D6FtMXpiIkigNPtJOXcS-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+            <mxGeometry height="42" width="228" x="228" as="geometry">
+              <mxRectangle height="42" width="228" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-70" parent="D6FtMXpiIkigNPtJOXcS-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="bas-hub-shared-swedencentral-001 &lt;br&gt;(bastion service)" vertex="1">
+          <mxGeometry height="42" width="228" x="456" as="geometry">
+            <mxRectangle height="42" width="228" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-102" edge="1" parent="1" source="D6FtMXpiIkigNPtJOXcS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="D6FtMXpiIkigNPtJOXcS-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6FtMXpiIkigNPtJOXcS-104" connectable="0" parent="D6FtMXpiIkigNPtJOXcS-102" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Link" vertex="1">
+          <mxGeometry relative="1" x="-0.3014" y="4" as="geometry">
+            <mxPoint x="-89" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0eQYh__Nr1NXl_aDqaWm-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=2" value="&lt;strong&gt;•&lt;/strong&gt; To connect to a VM remotely, the user must be a member of the mandatory security group (for the Bastion service) and at least one optional security group for the relevant workload (spoke VM).&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;• &lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Th&lt;/span&gt;e target VM must have the AADSSHLoginForLinux extension installed.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="51" width="684" x="-994" y="980" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

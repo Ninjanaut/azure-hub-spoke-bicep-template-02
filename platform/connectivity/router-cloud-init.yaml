@@ -1,0 +1,9 @@
+#cloud-config
+# Turns the hub router VM into a plain IP router for spoke-to-spoke traffic.
+# The NIC also needs IP forwarding enabled (set in main.bicep); both are required.
+write_files:
+  - path: /etc/sysctl.d/99-ip-forward.conf
+    content: |
+      net.ipv4.ip_forward = 1
+runcmd:
+  - sysctl --system
